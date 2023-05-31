@@ -2,10 +2,6 @@ const path = require('path');
 
 /** @type {import('next').NextConfig} */
 module.exports = {
-    generateBuildId: async () => {
-        // You can, for example, get the latest git commit hash here
-        return 'my-build-id';
-    },
     reactStrictMode: true,
     webpack: (config) => {
         config.resolve.alias['~'] = path.resolve(__dirname, 'src');
