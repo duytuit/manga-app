@@ -7,7 +7,7 @@
         "lint": "next lint",
         "ts": "tsc --noEmit --incremental",
         "postinstall": "husky install",
-        "pm2": "pm2 start npm --name manga -- run start -- -p 8089"
+        "pm2": "pm2 start npm --name manga -- run dev -- -p 8089"
     },
     "dependencies": {
         "@emotion/react": "^11.9.3",
